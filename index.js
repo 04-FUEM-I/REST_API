@@ -9,16 +9,16 @@ app.listen(
     () => console.log(`server ready at http://localhost"${PORT}`)
 );
 
-// app.get('/', (req, res) => {
-//     res.send(200);
-//   });
+app.get('/', (req, res) => {
+    res.send(200);
+  });
 
-// app.get("/", (req,res) =>
-// {
-//     res.status(200).send({
-//         item: "T-shirt",
-//         size: "L",
-//         onstock: 20
-//     })
-// });
+app.get("/", (req,res) =>
+{
+    res.status(200).send({
+        item: "T-shirt",
+        size: "L",
+        onstock: 20
+    })
+});
 
